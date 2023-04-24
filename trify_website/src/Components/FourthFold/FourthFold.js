@@ -40,10 +40,10 @@ function FourthFold() {
           <Grid xs={8}sx={{
             width: "70%",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "left",
             alignItems: "center",
           }}>
-          <Typography variant="h6" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="left">
           We collaborate with OEMs and other existing supply chain participants, to build a comprehensive and ubiquitous EV infrastructure, financing, and maintenance network.  Our motto is to integrate and complement rather than replicate what already exists.
           </Typography>
           </Grid>

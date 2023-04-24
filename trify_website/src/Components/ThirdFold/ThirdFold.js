@@ -21,7 +21,6 @@ function ThirdFold() {
         <Box sx={{
           border: 2,
           width: "30vw",
-          marginRight: "10%"
         }}>
         <img src={`${img3}`} width="100%" alt="mainImage" />
         </Box>
@@ -31,13 +30,13 @@ function ThirdFold() {
             display: "flex",
             justifyContent: "right",
             alignItems: "center",
-            marginRight: "5%",
-            //marginLeft: "auto"
+            marginLeft: "15%",
+            paddingLeft: "5%"
           }}>
           <Grid xs={12}sx={{
             width: "70%",
             display: "flex",
-            justifyContent: "right",
+            justifyContent: "left",
             alignItems: "center",
             paddingBottom: "5%",
           }}>
@@ -45,17 +44,18 @@ function ThirdFold() {
           The Opportunity
           </Typography>
           </Grid>
-          <Grid xs={4}></Grid>
+          
           <Grid xs={8}sx={{
             width: "70%",
             display: "flex",
-            justifyContent: "right",
+            justifyContent: "left",
             alignItems: "center",
           }}>
-          <Typography variant="h6" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="left">
           The arbitrage between the cost of electricity and petrol/ oil required to power EVs, creates an opportunity to green the transportation sector in a sustainable and scalable way for all value chain participants.
           </Typography>
           </Grid>
+          <Grid xs={4}></Grid>
         </Grid>
       </Container>
     </>

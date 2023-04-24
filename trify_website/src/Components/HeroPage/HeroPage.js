@@ -32,7 +32,6 @@ function HeroPage() {
         </Typography> */}
         <Box sx={{
           border: 2,
-          marginRight: "10%",
           width: "30vw"
         }}>
         <img src={`${mainBackground}`} width="100%" alt="mainImage" />
@@ -43,31 +42,32 @@ function HeroPage() {
             display: "flex",
             justifyContent: "right",
             alignItems: "center",
-            marginRight: "5%",
-            //marginLeft: "5%"
+            marginLeft: "15%",
+            paddingLeft: "5%"
           }}>
           <Grid xs={12}sx={{
             width: "70%",
             display: "flex",
-            justifyContent: "right",
+            justifyContent: "left",
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h4" component="div" color="#000" align="right">
+          <Typography variant="h4" component="div" color="#000" align="left">
           Electrifying Mobility, Empowering Lives
           </Typography>
           </Grid>
-          <Grid xs={4}></Grid>
-          <Grid xs={8}sx={{
+          
+          <Grid xs={10}sx={{
             width: "70%",
             display: "flex",
             justifyContent: "right",
             alignItems: "center",
           }}>
-          <Typography variant="h6" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="left">
           Trify's goal is to enable accelerated electrification of transportation in emerging markets. We aim to accelerate electric vehicle (EV) transition by providing comprehensive end-to-end solutions for end users.
           </Typography>
           </Grid>
+          <Grid xs={2}></Grid>
         </Grid>
       </Container>
     </>

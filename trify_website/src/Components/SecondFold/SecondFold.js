@@ -40,10 +40,10 @@ function SecondFold() {
           <Grid xs={8}sx={{
             width: "70%",
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "left",
             alignItems: "center",
           }}>
-          <Typography variant="h6" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="left">
           Creating a sustainable future by empowering gig workers with affordable, efficient, and eco-friendly EV solutions.
           </Typography>
           </Grid>
