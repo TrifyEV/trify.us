@@ -64,7 +64,7 @@ function HeroPage() {
             justifyContent: "right",
             alignItems: "center",
           }}>
-          <Typography variant="h5" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="justify">
           Trify's goal is to enable accelerated electrification of transportation in emerging markets. We aim to accelerate electric vehicle (EV) transition by providing comprehensive end-to-end solutions for end users.
           </Typography>
           </Grid>
