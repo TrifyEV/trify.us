@@ -53,7 +53,7 @@ function HeroPage() {
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h2" component="div" color="#000" align="right">
+          <Typography variant="h4" component="div" color="#000" align="right">
           Electrifying Mobility, Empowering Lives
           </Typography>
           </Grid>

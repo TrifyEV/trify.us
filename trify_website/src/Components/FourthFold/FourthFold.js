@@ -33,7 +33,7 @@ function FourthFold() {
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h2" component="div" color="#000">
+          <Typography variant="h4" component="div" color="#000">
           Trify Model
           </Typography>
           </Grid>
@@ -43,7 +43,7 @@ function FourthFold() {
             justifyContent: "center",
             alignItems: "center",
           }}>
-          <Typography variant="h4" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="justify">
           We collaborate with OEMs and other existing supply chain participants, to build a comprehensive and ubiquitous EV infrastructure, financing, and maintenance network.  Our motto is to integrate and complement rather than replicate what already exists.
           </Typography>
           </Grid>

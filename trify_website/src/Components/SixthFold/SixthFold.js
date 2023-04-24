@@ -36,7 +36,7 @@ function SixthFold() {
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h2" component="div" color="#000">
+          <Typography variant="h4" component="div" color="#000">
           Impact
           </Typography>
           </Grid>
@@ -45,8 +45,8 @@ function SixthFold() {
             justifyContent: "left",
             alignItems: "center",
           }}>
-          <Typography variant="h4" component="div" color="#000" align="justify">
-          Trify's integrated approach delivers infrastructure returns, reduces CO2 emissions, and also increases  gig workers' income.
+          <Typography variant="h6" component="div" color="#000" align="left">
+          Trify's integrated approach delivers infrastructure returns, reduces CO<sub>2</sub> emissions, and also increases  gig workers' income.
           </Typography>
           </Grid>
           <Grid xs={4}></Grid>

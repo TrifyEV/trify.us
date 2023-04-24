@@ -30,7 +30,7 @@ function FifthFold() {
          sx={{
             width: "40%",
             display: "flex",
-            justifyContent: "right",
+            justifyContent: "left",
             alignItems: "center",
             marginRight: "5%",
             //marginLeft: "auto"
@@ -42,7 +42,7 @@ function FifthFold() {
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h2" component="div" color="#000">
+          <Typography variant="h4" component="div" color="#000">
           Roadmap
           </Typography>
           </Grid>
@@ -53,7 +53,7 @@ function FifthFold() {
             justifyContent: "right",
             alignItems: "center",
           }}>
-          <Typography variant="h4" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="left">
           Our strategic expansion plan includes scalable growth and profitability, starting with 2 and 3 wheelers in East African markets.
           </Typography>
           </Grid>

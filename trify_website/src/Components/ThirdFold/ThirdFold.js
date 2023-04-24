@@ -41,7 +41,7 @@ function ThirdFold() {
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h2" component="div" color="#000">
+          <Typography variant="h4" component="div" color="#000">
           The Opportunity
           </Typography>
           </Grid>
@@ -52,7 +52,7 @@ function ThirdFold() {
             justifyContent: "right",
             alignItems: "center",
           }}>
-          <Typography variant="h4" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="justify">
           The arbitrage between the cost of electricity and petrol/ oil required to power EVs, creates an opportunity to green the transportation sector in a sustainable and scalable way for all value chain participants.
           </Typography>
           </Grid>

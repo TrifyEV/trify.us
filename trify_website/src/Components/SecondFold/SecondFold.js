@@ -33,7 +33,7 @@ function SecondFold() {
             alignItems: "center",
             paddingBottom: "5%",
           }}>
-          <Typography variant="h2" component="div" color="#000">
+          <Typography variant="h4" component="div" color="#000">
             Our Vision
           </Typography>
           </Grid>
@@ -43,7 +43,7 @@ function SecondFold() {
             justifyContent: "center",
             alignItems: "center",
           }}>
-          <Typography variant="h4" component="div" color="#000" align="justify">
+          <Typography variant="h6" component="div" color="#000" align="justify">
           Creating a sustainable future by empowering gig workers with affordable, efficient, and eco-friendly EV solutions.
           </Typography>
           </Grid>
