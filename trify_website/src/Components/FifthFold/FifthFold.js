@@ -1,8 +1,7 @@
-import React from 'react'
-import {Box, Grid, Container, Typography } from "@mui/material";
-import img5 from "../../Images/Battery.jpg"
-import { padding } from '@mui/system';
-
+import React from "react";
+import { Box, Grid, Container, Typography } from "@mui/material";
+import img5 from "../../Images/Battery.jpg";
+import { padding } from "@mui/system";
 
 function FifthFold() {
   return (
@@ -10,7 +9,6 @@ function FifthFold() {
       <Container
         maxWidth="100%"
         sx={{
-          
           display: "flex",
           justifyContent: "right",
           alignItems: "center",
@@ -19,50 +17,62 @@ function FifthFold() {
         }}
       >
         {/* <img src={`${mainBackground}`} width="100%" /> */}
-        <Box sx={{
-          border: 2,
-          width: "30vw",
-        }}>
-        <img src={`${img5}`} width="100%" alt="mainImage" />
+        <Box
+          sx={{
+            border: 2,
+            width: "30vw",
+          }}
+        >
+          <img src={`${img5}`} width="100%" alt="mainImage" />
         </Box>
 
-        <Grid container spacing={2}
-         sx={{
+        <Grid
+          container
+          spacing={2}
+          sx={{
             width: "40%",
             display: "flex",
             justifyContent: "left",
             alignItems: "center",
             marginLeft: "15%",
-            paddingLeft: "5%"
-          }}>
-          <Grid xs={12}sx={{
-            width: "70%",
-            display: "flex",
-            justifyContent: "left",
-            alignItems: "center",
-            paddingBottom: "5%",
-            
-          }}>
-          <Typography variant="h4" component="div" color="#000">
-          Roadmap
-          </Typography>
+            paddingLeft: "5%",
+          }}
+        >
+          <Grid
+            xs={12}
+            sx={{
+              width: "70%",
+              display: "flex",
+              justifyContent: "left",
+              alignItems: "center",
+              paddingBottom: "5%",
+            }}
+          >
+            <Typography variant="h4" component="div" color="#000">
+              Roadmap
+            </Typography>
           </Grid>
-          
-          <Grid xs={8}sx={{
-            width: "70%",
-            display: "flex",
-            justifyContent: "left",
-            alignItems: "center",
-          }}>
-          <Typography variant="h6" component="div" color="#000" align="left">
-          Our strategic expansion plan includes scalable growth and profitability, starting with 2 and 3 wheelers in East African markets.
-          </Typography>
+
+          <Grid
+            xs={8}
+            sx={{
+              width: "70%",
+              display: "flex",
+              justifyContent: "left",
+              alignItems: "center",
+            }}
+          >
+            <Typography variant="h6" component="div" color="#000" align="left">
+              Our strategic expansion plan includes scalable growth and
+              profitability, starting with 2 and 3 wheelers in East African
+              markets.
+            </Typography>
           </Grid>
           <Grid xs={4}></Grid>
         </Grid>
       </Container>
     </>
-  )
+  );
 }
 
-export default FifthFold
+export default FifthFold;
