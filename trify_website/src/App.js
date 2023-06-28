@@ -7,18 +7,23 @@ import FourthFold from "./Components/FourthFold/FourthFold";
 import FifthFold from "./Components/FifthFold/FifthFold";
 import SixthFold from "./Components/SixthFold/SixthFold";
 
+import ToolBar from "./NativeComponents/ToolBar";
+import NativeHeroPage from "./NativeComponents/NativeHeroPage";
+
+import { Capacitor } from "@capacitor/core";
+import { IonContent } from "@ionic/react";
+// import { useIonViewDidEnter } from "@ionic/react-hooks";
+
 function App() {
   return (
     <>
-      {/* <div style={{ paddingTop: "env(safe-area-inset-top)" }}> */}
-      <AppBar />
-      <HeroPage />
+      {Capacitor.isNative ? <ToolBar /> : <AppBar />}
+      {Capacitor.isNative ? <NativeHeroPage /> : <HeroPage />}
       <SecondFold />
       <ThirdFold />
       <FourthFold />
       <FifthFold />
       <SixthFold />
-      {/* </div> */}
     </>
   );
 }

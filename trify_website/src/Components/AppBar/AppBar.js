@@ -17,6 +17,10 @@ import Button from "@mui/material/Button";
 import image1 from "../../Images/logo3.png";
 import image2 from "../../Images/trify.jpeg";
 
+import { Capacitor } from "@capacitor/core";
+import { IonContent } from "@ionic/react";
+// import { useIonViewDidEnter } from "@ionic/react-hooks";
+
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 
@@ -50,62 +54,64 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <container>
-        <AppBar
-          component="nav"
-          sx={{ background: "transparent", boxShadow: "none" }}
-        >
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <img src={`${image1}`} width="150px" alt="logo1" />
-            {/* <img src={`${image2}`} width="115px" alt='logo2' /> */}
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-            ></Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#000" }}>
-                  {item}
-                </Button>
-              ))}
-            </Box>
-          </Toolbar>
-        </AppBar>
-      </container>
+    <>
+      <Box sx={{ display: "flex" }}>
+        <CssBaseline />
+        <container>
+          <AppBar
+            component="nav"
+            sx={{ background: "transparent", boxShadow: "none" }}
+          >
+            <Toolbar>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: "none" } }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <img src={`${image1}`} width="150px" alt="logo1" />
+              {/* <img src={`${image2}`} width="115px" alt='logo2' /> */}
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+              ></Typography>
+              <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                {navItems.map((item) => (
+                  <Button key={item} sx={{ color: "#000" }}>
+                    {item}
+                  </Button>
+                ))}
+              </Box>
+            </Toolbar>
+          </AppBar>
+        </container>
 
-      <Box component="nav">
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
+        <Box component="nav">
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 }
 

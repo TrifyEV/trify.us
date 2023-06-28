@@ -1,6 +1,6 @@
 import { Grid, Box, Container, Typography } from "@mui/material";
 import React from "react";
-import mainBackground from "../../Images/main1.jpg";
+import mainBackground from "../Images/main1.jpg";
 
 function HeroPage() {
   return (
