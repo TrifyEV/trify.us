@@ -40,3 +40,13 @@
 .bg-green {
   background-color: #48987B;
 }
+
+.bg-image {
+
+  background: url("./assets/images/Background2.png") ;
+}
+
+.footer {
+  background-color: grey;
+  height: 150px;
+}

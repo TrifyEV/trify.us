@@ -4,14 +4,21 @@ import bharath from './images/bharath.png';
 import Anand from './images/anand.png';
 import vinay from './images/vinay.png';
 import krishnan from './images/krishnan.jpeg';
+
 import './App.css';
 import { Col, Row } from 'antd';
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { ArrowRightCircleIcon, Bars3Icon, CloudIcon, EyeIcon, MapIcon, UserGroupIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
 function App() {
+
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
 
   const people = [
     {
@@ -42,10 +49,11 @@ function App() {
   ]
 
   const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    // add nav later
+    // { name: 'Product', href: '#' },
+    // { name: 'Features', href: '#' },
+    // { name: 'Marketplace', href: '#' },
+    // { name: 'Company', href: '#' },
   ]
 
   const features = [
@@ -188,22 +196,22 @@ function App() {
       </Dialog>
     </header>
 
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="relative isolate px-6 pt-14 lg:px-8 bg-image">
 
-      <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+      <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
        
         </div>
         <div>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl text-white">
           Trify
           </h1>
-          <p className="mt-6 text-2xl leading-8 text-gray-600">
-          A trusted, end to end solution for accelerating the electric vehicle transition
+          <p className="mt-6 text-2xl leading-8 text-gray-600 text-white">
+          A trusted, end to end solution for accelerating the electric vehicle transition.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
-              href="#"
+              onClick={handleClick}
               className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Learn More
@@ -218,7 +226,7 @@ function App() {
     </div>
   </div>
 
-  <div className="bg-white py-12 sm:py-32">
+  <div className="bg-white py-12 sm:py-32" ref={ref}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-green-600">About Trify</h2>
@@ -286,7 +294,7 @@ function App() {
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-           A high calibre, trusted team with proven expertise in the areas needed to succeed
+           A high calibre, trusted team with proven expertise in the areas needed to succeed.
           </p>
         </div>
         <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
@@ -303,6 +311,9 @@ function App() {
           ))}
         </ul>
       </div>
+    </div>
+    <div className='footer'>
+          
     </div>
   </>
   );
